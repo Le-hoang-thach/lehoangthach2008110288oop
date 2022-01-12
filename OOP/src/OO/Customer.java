@@ -17,7 +17,7 @@ public class Customer {
    
     void inputInformation(){
         System.out.println("Please input your name:");
-        name = input.nextLine();
+        name = input.next();
         System.out.println("Please input age:");
         age = input.nextInt();
         System.out.println("Please input address:");
