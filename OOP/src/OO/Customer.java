@@ -14,24 +14,21 @@ public class Customer {
     //function
     //opertion
     // hàm
-   
-    void inputInformation(){
-        System.out.println("Please input your name:");
-        name = input.next();
-        System.out.println("Please input age:");
-        age = input.nextInt();
-        System.out.println("Please input address:");
-        address = input.next();
-        System.out.println("Please input indentity card:");
-        identity_card = input.nextInt();
-        System.out.println("Please input phone number:");
-        phone_number = input.nextInt();
+    public Customer(String Name, int Age, int Indentity_card, int Phone_number){
+        name= Name;
+        age = Age;
+        identity_card = Indentity_card;
+        phone_number = Phone_number;
     }
-    void showInformation(){
-        System.out.println("Fist and last name :" + name ) ;
-        System.out.println("Age: " + age);
-        System.out.println("Address: " + address);
-        System.out.println("Indentity card: " + identity_card);
-        System.out.println("Phone mumber: " + phone_number);  
+    public void name(){
+        System.out.println("Full name: " + name);
+
     }
+    public void Age(){
+        System.out.println("Age: " + age );
+    }
+    public void indentity_card(){
+        System.out.println("");
+    }
+    
 }
