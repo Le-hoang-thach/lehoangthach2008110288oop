@@ -9,18 +9,22 @@ public class Shape {
     String sound;
     // function
     // opertion
-    public Shape(String Name,String _turn,String _sound){
+    //method
+    public Shape(){
+        // hàm mặc định // default constructor
+        this.name = "vuong";
+        this.turn = "quay";
+    }
+    public  Shape(String Name,String _turn,String _sound){
         name = Name;
         turn = _turn;
         sound = _sound;
     }
-    void name(){
+    void inthongTin(){
         System.out.println("Full name:" + name);
-    }
-    void turn(){
         System.out.println("Shape:" + turn);
-    }
-    void sound(){
         System.out.println("Sound:" + sound);
+
     }
+  
 }

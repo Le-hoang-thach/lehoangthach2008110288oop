@@ -11,6 +11,20 @@ public class Student {
     double age;
     String Code_Student;
     String lop;
+    public Student(){
+        
+    }
+    public Student(String name , double age){
+        this.name = name;
+        this.age = age;
+
+    }
+    public Student(String name, double age, String  Code_Student,String lop){
+        // hàm phảt đặt đầu tiên
+        this(name, age);
+        this.Code_Student = Code_Student;
+        this.lop = lop;
+    }
     void hoc(){
         // code 
         System.out.println("Please , input class");

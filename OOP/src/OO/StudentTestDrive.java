@@ -1,14 +1,11 @@
 package OO;
 
+import java.util.jar.Attributes.Name;
+
 public class StudentTestDrive {
    public static void main(String[] args) {
-    Student taiStudent = new Student();
-    taiStudent.hoc();
-    taiStudent.thi();
-    Student thachStudent = new Student();
-    thachStudent.doc();
-    thachStudent.hoatDongNgoaiKhoa();;
-    Student trungStudent = new Student();
-    trungStudent.doc();
+      Student student = new Student("long", 19, "2008110288", "pm02");
+     
+
    }
 }
