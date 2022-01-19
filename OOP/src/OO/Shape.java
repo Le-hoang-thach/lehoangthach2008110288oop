@@ -20,7 +20,7 @@ public class Shape {
         turn = _turn;
         sound = _sound;
     }
-    void inthongTin(){
+    void inThongTin(){
         System.out.println("Full name:" + name);
         System.out.println("Shape:" + turn);
         System.out.println("Sound:" + sound);
