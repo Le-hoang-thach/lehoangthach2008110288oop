@@ -12,8 +12,7 @@ public class Shape {
     //method
     public Shape(){
         // hàm mặc định // default constructor
-        this.name = "vuong";
-        this.turn = "quay";
+        
     }
     public  Shape(String Name,String _turn,String _sound){
         name = Name;
