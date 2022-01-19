@@ -12,9 +12,12 @@ public class Square {
     public  Square(String fileSound){
         this.fileSound = fileSound;
     }
-    void Turn(){
-        System.out.println("Xượt....xượt.....xượt");
+    void Rotate(){
+        System.out.println("u ...... u ...... u" );
 
+    }
+    void playSound(){
+        System.out.println("dang quay " + this.fileSound + "360");
     }
   
 }
