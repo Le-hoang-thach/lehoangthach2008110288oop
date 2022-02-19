@@ -12,11 +12,11 @@ public class Circle {
     public  Circle(String fileSound){
         this.fileSound = fileSound;
     }
-    void  Rotate(){
-       System.out.println("ò ...... ò ...... ò" );
+    void  rotate(){
+       System.out.println("ò ...... ò ...... ò"  +" 360 ");
     }
     void playSound(){
-        System.out.println("dang quay " + this.fileSound + "360");
+        System.out.println("files sound " + this.fileSound + " music");
     }
   
 }

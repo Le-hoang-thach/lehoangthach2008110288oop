@@ -3,6 +3,7 @@ package Kteam;
 
 
 public class Bien_Bai4 {
+    // cú pháp <kiểu dữ liệu> <tên biến> = <giá trị của biến>;
     // kieu du lieu ten bien
     // kieu du lieu la so thuc hoac so nguyen chuoi
     /* ten bien theo kieu:

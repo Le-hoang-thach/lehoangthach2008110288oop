@@ -12,12 +12,12 @@ public class Triangle {
     public Triangle(String fileSound){
        this.fileSound = fileSound;
     }
-    void Rotate(){
-        System.out.println("i ...... i ...... i" );
+    void rotate(){
+        System.out.println("i ...... i ...... i" + " 360");
 
     }
     void playSound(){
-        System.out.println("dang quay " + this.fileSound + "360");
+        System.out.println("files sound " + this.fileSound + " music");
     }
 
 }
