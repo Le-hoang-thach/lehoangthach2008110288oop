@@ -3,51 +3,64 @@ package BaiLab4;
 import java.util.Scanner;
 
 public class SanPham {
-    static Scanner input = new Scanner(System.in);
-    //data
+   
+    //attribute
+    // implementation
+    private Scanner input = new Scanner(System.in);
     private String tenSP;
     private double donGia;
     private double giamGia;
-    // contruction
-    public SanPham(){
+    //interfaces
+    public  SanPham(){
 
     }
-    public SanPham(String tenSP, double donGia, double giamGia){
-        this.tenSP = tenSP;
+    public SanPham(String tenSp, double donGia){
+        this.tenSP = tenSp;
         this.donGia = donGia;
-        this.giamGia = giamGia;
-
     }
-    public String getTenSp(){
+    public SanPham(String tenSP, double donGia , double giamGia){
+        this(tenSP, donGia);
+        this.giamGia = giamGia;
+    }
+    public void setTenSP(String tenSP) {
+        this.tenSP = tenSP;
+    }
+    public String getTenSP() {
         return this.tenSP;
     }
-    public void setTenSP(String tenSP){
-        this.tenSP = tenSP;
+    public void setDonGia(double donGia) {
+        this.donGia = donGia;
     }
-    public double getDonGia(){
-        return donGia;
+    public double getDonGia() {
+        return this.donGia;
     }
-    public void setDonGia(double donGia){
-        if(donGia <= 100000){
-            this.donGia = donGia - 10000;
-        }else 
-        if( donGia > 200000){
-            this.donGia = donGia -20000;
-        }
+    public void setGiamGia(double giamGia) {
+        this.giamGia = giamGia;
     }
-   
-   
+    public double getGiamGia() {
+        return this.giamGia;
+    }
+    private void getThueNhapKhau(double thueNhapKhau) {
+        thueNhapKhau = 10 * donGia / 100;
+        System.out.println("Thuế nhập khẩu: " + thueNhapKhau);
+    }
+
     public void nhap(){
-        System.out.println("nhap ten sp: " );
+        System.out.println("Nhap ten san pham: ");
         tenSP = input.nextLine();
-        System.out.println("nhap gia tien: " );
+        System.out.println("Nhap gia san pham: ");
         donGia = input.nextDouble();
-        System.out.println("giam gia: " );
-        giamGia = input.nextDouble();
+        System.out.println("Giam gia");
+        giamGia = input.nextDouble(); 
     }
     public void xuat(){
-        System.out.println("ten sp:" + tenSP);
-        System.out.println("gia cu:" + donGia);
-        System.out.println("giam gia:" + giamGia);
+        System.out.println("Tenm san pham la: " + tenSP );
+        System.out.println("Don gia: " + donGia);
+        System.out.println("Giam gia: " + giamGia);
     }
+    
+    
+   
+   
+   
 }
