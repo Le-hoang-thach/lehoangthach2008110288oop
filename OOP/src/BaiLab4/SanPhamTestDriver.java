@@ -1,6 +1,6 @@
 package BaiLab4;
 
-
+import java.util.ArrayList;
 
 public class SanPhamTestDriver {
     public static void main(String[] args) {
@@ -19,8 +19,16 @@ public class SanPhamTestDriver {
         sp4.xuat();
         //bai 4
         SanPham sp5 = new SanPham("gao", 300000, 20000);
-        sp5.setDonGia(300000);
-        System.out.println(sp5.getDonGia());
+        System.out.println("tien san truoc giam gia: " ); 
         sp5.xuat();
+        sp5.setDonGia(300000);
+        System.out.println("day tien san pham sau giam gia:" + sp5.getDonGia());
+        sp5.xuat();
+        // bai 5
+        
+
+
+
+
     }
 }
