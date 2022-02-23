@@ -2,15 +2,18 @@ package GuessGame;
 
 public class GuessGame {
     //attribute
-        private int guessp1 = 0;
-        private int guessp2 = 0;
-        private int guessp3 = 0;
-    //inplementation
+    //emplementation
+    private int guessp1 = 0;
+    private int guessp2 = 0;
+    private int guessp3 = 0;
+    // method
+    // interfaces
+    
     public void startGame() {
         Player p1 = new Player();
         Player p2 = new Player();
         Player p3 = new Player();
- 
+        
          boolean p1isRight = false;
          boolean p2isRight = false;
          boolean p3isRight = false;
