@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch NganHangTestDrive",
+            "request": "launch",
+            "mainClass": "tuan3.buoi5.buoi6.NganHangTestDrive",
+            "projectName": "OOP_7abb1e95"
+        },
+        {
+            "type": "java",
             "name": "Launch DogTestDriver",
             "request": "launch",
             "mainClass": "tuan3.buoi5.DogTestDriver",

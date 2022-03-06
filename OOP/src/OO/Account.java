@@ -32,5 +32,27 @@ public class Account {
         System.out.println("Account-blance: " + account_blance);
         System.out.println("----------------");
     }
+    public void setsTk(long nextLong) {
+    }
+    public void settenTk(String nextLine) {
+    }
+    public void settienTk(int i) {
+    }
+    public void inTK() {
+    }
+    public long getSoTK() {
+        return 0;
+    }
+    public void napTien() {
+    }
+    public void rutTien() {
+    }
+    public void daoHan() {
+    }
+    public double getSoTienTrongTK() {
+        return 0;
+    }
+    public void setSoTienTrongTK(double chuyen) {
+    }
    
 }

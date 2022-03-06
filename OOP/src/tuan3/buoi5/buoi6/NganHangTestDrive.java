@@ -11,7 +11,8 @@ public class NganHangTestDrive {
         tk.setsTk(sc.nextLong());
         System.out.println("Nhap ten tk:");
         tk.settenTk(sc.nextLine());
-        tk.setsTk(100);
+        tk.settienTk(100);
+        
 
     }
     public static void main(String[] args) {
