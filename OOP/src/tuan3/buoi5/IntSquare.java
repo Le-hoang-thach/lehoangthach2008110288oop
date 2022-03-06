@@ -1,4 +1,4 @@
-package tuan3.buoi1;
+package tuan3.buoi5;
 
 public class IntSquare {
     //attribute
@@ -11,7 +11,7 @@ public class IntSquare {
     //methor 
     //interface
     
-    public int getsquareValue(int number) {
+    public int getSquareValue(int number) {
         squareValue = (int) Math.pow(number, 2);
         return squareValue;
     }

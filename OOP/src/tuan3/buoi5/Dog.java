@@ -1,4 +1,4 @@
-package tuan3.buoi1;
+package tuan3.buoi5;
 
 
 
@@ -22,6 +22,14 @@ public class Dog {
         }
         
     }
+    public Dog(){
+
+    }
+    public Dog(int size ,String breed, String name){
+            this.name = name;
+            this.size = size;
+            this.breed = breed;
+    }
     public int getSize() {
         return this.size;
     }
@@ -36,6 +44,10 @@ public class Dog {
     }
     public String getBreed() {
         return this.breed;
+    }
+    public String toString(){
+        String str = name + breed + size;
+        return str;
     }
 
 

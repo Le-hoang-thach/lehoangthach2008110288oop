@@ -1,7 +1,7 @@
 package GuessGame;
 
 public class GuessGame {
-    //attribute
+  /*  //attribute
     //emplementation
     private int guessp1 = 0;
     private int guessp2 = 0;
@@ -21,7 +21,7 @@ public class GuessGame {
          System.out.println("I'm thinking of a number between 0 and 9...");
  
          while (true) {
-             System.out.println("Number to guess is " + targetNumber);
+          System.out.println("Number to guess is " + targetNumber);
              p1.guess();
              p2.guess();
              p3.guess();
@@ -52,5 +52,5 @@ public class GuessGame {
                  System.out.println("Players will have to try again.");
              }
          }
-     }
+     }*/
 }

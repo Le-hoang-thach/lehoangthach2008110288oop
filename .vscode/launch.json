@@ -1,0 +1,294 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch DogTestDriver",
+            "request": "launch",
+            "mainClass": "tuan3.buoi5.DogTestDriver",
+            "projectName": "OOP_7abb1e95"
+        },
+        {
+            "type": "java",
+            "name": "Launch VehicleTestDrive",
+            "request": "launch",
+            "mainClass": "tuan3.buoi5.buoi6.VehicleTestDrive",
+            "projectName": "OOP_7abb1e95"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "TicTacTe.Main",
+            "projectName": "OOP_7abb1e95"
+        },
+        {
+            "type": "java",
+            "name": "Launch AnimalTestDrive",
+            "request": "launch",
+            "mainClass": "ThuaKe.AnimalTestDrive",
+            "projectName": "OOP_7abb1e95"
+        },
+        {
+            "type": "java",
+            "name": "Launch SinhVienTestDirve",
+            "request": "launch",
+            "mainClass": "tuan3.buoi5.buoi6.SinhVienTestDirve",
+            "projectName": "OOP_7abb1e95"
+        },
+        {
+            "type": "java",
+            "name": "Launch HinhChuNhatTestDrive",
+            "request": "launch",
+            "mainClass": "tuan3.buoi5.buoi6.HinhChuNhatTestDrive",
+            "projectName": "OOP_7abb1e95"
+        },
+        {
+            "type": "java",
+            "name": "Launch CarTestDriver",
+            "request": "launch",
+            "mainClass": "tuan3.buoi5.buoi6.CarTestDriver",
+            "projectName": "OOP_7abb1e95"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "OOP_7abb1e95"
+        },
+        {
+            "type": "java",
+            "name": "Launch SanPhamTestDriver",
+            "request": "launch",
+            "mainClass": "BaiLab4.SanPhamTestDriver",
+            "projectName": "OOP_7abb1e95"
+        },
+        {
+            "type": "java",
+            "name": "Launch BaiTimMaxMinTrongMang",
+            "request": "launch",
+            "mainClass": "BaiLamThemKteam.BaiTimMaxMinTrongMang",
+            "projectName": "OOP_7abb1e95"
+        },
+        {
+            "type": "java",
+            "name": "Launch DemSo",
+            "request": "launch",
+            "mainClass": "BaiLamThemKteam.DemSo",
+            "projectName": "OOP_7abb1e95"
+        },
+        {
+            "type": "java",
+            "name": "Launch SoNguyen",
+            "request": "launch",
+            "mainClass": "BaiLamThemKteam.SoNguyen",
+            "projectName": "OOP_7abb1e95"
+        },
+        {
+            "type": "java",
+            "name": "Launch GameLaucher",
+            "request": "launch",
+            "mainClass": "GuessGame.GameLaucher",
+            "projectName": "OOP_7abb1e95"
+        },
+        {
+            "type": "java",
+            "name": "Launch HangHoaTestDrive",
+            "request": "launch",
+            "mainClass": "HangHoa.HangHoaTestDrive",
+            "projectName": "OOP_7abb1e95"
+        },
+        {
+            "type": "java",
+            "name": "Launch Bien_Bai4",
+            "request": "launch",
+            "mainClass": "Kteam.Bien_Bai4",
+            "projectName": "OOP_7abb1e95"
+        },
+        {
+            "type": "java",
+            "name": "Launch BreakAndContinue_Bai14",
+            "request": "launch",
+            "mainClass": "Kteam.BreakAndContinue_Bai14",
+            "projectName": "OOP_7abb1e95"
+        },
+        {
+            "type": "java",
+            "name": "Launch CacDangToanTu_Bai6",
+            "request": "launch",
+            "mainClass": "Kteam.CacDangToanTu_Bai6",
+            "projectName": "OOP_7abb1e95"
+        },
+        {
+            "type": "java",
+            "name": "Launch CauTrucReNhanh_If_elseTrongJava_Bai9",
+            "request": "launch",
+            "mainClass": "Kteam.CauTrucReNhanh_If_elseTrongJava_Bai9",
+            "projectName": "OOP_7abb1e95"
+        },
+        {
+            "type": "java",
+            "name": "Launch ChuiLong",
+            "request": "launch",
+            "mainClass": "Kteam.ChuiLong",
+            "projectName": "OOP_7abb1e95"
+        },
+        {
+            "type": "java",
+            "name": "Launch EpKieuTrongJava_bai8",
+            "request": "launch",
+            "mainClass": "Kteam.EpKieuTrongJava_bai8",
+            "projectName": "OOP_7abb1e95"
+        },
+        {
+            "type": "java",
+            "name": "Launch Hang_bai7",
+            "request": "launch",
+            "mainClass": "Kteam.Hang_bai7",
+            "projectName": "OOP_7abb1e95"
+        },
+        {
+            "type": "java",
+            "name": "Launch KieuDuLieu_Bai5",
+            "request": "launch",
+            "mainClass": "Kteam.KieuDuLieu_Bai5",
+            "projectName": "OOP_7abb1e95"
+        },
+        {
+            "type": "java",
+            "name": "Launch Mang_Bai12",
+            "request": "launch",
+            "mainClass": "Kteam.Mang_Bai12",
+            "projectName": "OOP_7abb1e95"
+        },
+        {
+            "type": "java",
+            "name": "Launch OOP_bai16",
+            "request": "launch",
+            "mainClass": "Kteam.OOP_bai16",
+            "projectName": "OOP_7abb1e95"
+        },
+        {
+            "type": "java",
+            "name": "Launch SwitchCase_Bai15",
+            "request": "launch",
+            "mainClass": "Kteam.SwitchCase_Bai15",
+            "projectName": "OOP_7abb1e95"
+        },
+        {
+            "type": "java",
+            "name": "Launch VongLapForEach_Bai13",
+            "request": "launch",
+            "mainClass": "Kteam.VongLapForEach_Bai13",
+            "projectName": "OOP_7abb1e95"
+        },
+        {
+            "type": "java",
+            "name": "Launch VongLapFor_Bai11",
+            "request": "launch",
+            "mainClass": "Kteam.VongLapFor_Bai11",
+            "projectName": "OOP_7abb1e95"
+        },
+        {
+            "type": "java",
+            "name": "Launch VongLapWhileTrong_Bai10",
+            "request": "launch",
+            "mainClass": "Kteam.VongLapWhileTrong_Bai10",
+            "projectName": "OOP_7abb1e95"
+        },
+        {
+            "type": "java",
+            "name": "Launch SinhVienTestDriver",
+            "request": "launch",
+            "mainClass": "Kteam.mypack.SinhVienTestDriver",
+            "projectName": "OOP_7abb1e95"
+        },
+        {
+            "type": "java",
+            "name": "Launch main",
+            "request": "launch",
+            "mainClass": "Kteam.mypack.main",
+            "projectName": "OOP_7abb1e95"
+        },
+        {
+            "type": "java",
+            "name": "Launch AccountTestDrive",
+            "request": "launch",
+            "mainClass": "OO.AccountTestDrive",
+            "projectName": "OOP_7abb1e95"
+        },
+        {
+            "type": "java",
+            "name": "Launch CowTestDrive",
+            "request": "launch",
+            "mainClass": "OO.CowTestDrive",
+            "projectName": "OOP_7abb1e95"
+        },
+        {
+            "type": "java",
+            "name": "Launch HangHoaTestDrive(1)",
+            "request": "launch",
+            "mainClass": "OO.HangHoaTestDrive",
+            "projectName": "OOP_7abb1e95"
+        },
+        {
+            "type": "java",
+            "name": "Launch PigTestDrive",
+            "request": "launch",
+            "mainClass": "OO.PigTestDrive",
+            "projectName": "OOP_7abb1e95"
+        },
+        {
+            "type": "java",
+            "name": "Launch StudentTestDrive",
+            "request": "launch",
+            "mainClass": "OO.StudentTestDrive",
+            "projectName": "OOP_7abb1e95"
+        },
+        {
+            "type": "java",
+            "name": "Launch ShapeTestDrive",
+            "request": "launch",
+            "mainClass": "OO.shape.ShapeTestDrive",
+            "projectName": "OOP_7abb1e95"
+        },
+        {
+            "type": "java",
+            "name": "Launch Bank",
+            "request": "launch",
+            "mainClass": "k14dcpm02.nonstruction.Bank",
+            "projectName": "OOP_7abb1e95"
+        },
+        {
+            "type": "java",
+            "name": "Launch Bank(1)",
+            "request": "launch",
+            "mainClass": "k14dcpm02.nonstruction.struction.Bank",
+            "projectName": "OOP_7abb1e95"
+        },
+        {
+            "type": "java",
+            "name": "Launch DogTestDriver",
+            "request": "launch",
+            "mainClass": "tuan3.buoi1.DogTestDriver",
+            "projectName": "OOP_7abb1e95"
+        },
+        {
+            "type": "java",
+            "name": "Launch IntSquareTestDriver",
+            "request": "launch",
+            "mainClass": "tuan3.buoi1.IntSquareTestDriver",
+            "projectName": "OOP_7abb1e95"
+        }
+    ]
+}
