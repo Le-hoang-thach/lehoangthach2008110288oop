@@ -65,17 +65,18 @@ public class DanhSachHoaDon  {
             hoaDonTheoGio.nhapThongTin();
             this.listHoaDonTheoGio.add(hoaDonTheoGio);
             System.out.println("_____hourly bill ______");
-            for (HoaDonTheoNgay hoaDonTheoNgay : listHoaDonTheoNgay) {
-                System.out.println(hoaDonTheoNgay);
-            }
+            for (HoaDonTheoGio hoaDonTheoGio1 : listHoaDonTheoGio) {
+                System.out.println(hoaDonTheoGio1);
+                }
+            
         }else{
             HoaDonTheoNgay hoaDonTheoNgay = new HoaDonTheoNgay();
            hoaDonTheoNgay.nhapThongTin();
            this.listHoaDonTheoNgay.add(hoaDonTheoNgay);
            System.out.println("_______Invoice by day_______");
-           for (HoaDonTheoGio hoaDonTheoGio : listHoaDonTheoGio) {
-            System.out.println(hoaDonTheoGio);
-            }
+           for (HoaDonTheoNgay hoaDonTheoNgay1 : listHoaDonTheoNgay) {
+            System.out.println(hoaDonTheoNgay1);
+        }
         }
     }
 }

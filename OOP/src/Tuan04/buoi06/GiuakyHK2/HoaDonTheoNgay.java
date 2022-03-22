@@ -37,5 +37,12 @@ public class HoaDonTheoNgay extends HoaDonKhachSan implements FuntionTinhTien {
             return soNgayThue * getDonGia();
         }
     }
+
+    @Override
+    public String toString() {
+        // TODO Auto-generated method stub
+        return super.toString() + "So ngay thue:" + soNgayThue;
+    }
+    
     
 }
