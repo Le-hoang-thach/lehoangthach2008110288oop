@@ -1,5 +1,11 @@
-package KiemTraGiuaKy;
+// package KiemTraGiuaKy;
 
-public interface FuntionTinhTien {
-    void tinhTien();
-}
+
+
+// public class FuntionTinhTien {
+//    public static void main(String[] args) {
+//        static(){
+//            System.out.println("heheheheheheh");
+//        }
+//    }
+// }

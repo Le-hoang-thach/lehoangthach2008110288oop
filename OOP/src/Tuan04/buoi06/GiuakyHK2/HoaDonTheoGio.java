@@ -5,11 +5,7 @@ import java.util.Scanner;
 public class HoaDonTheoGio extends HoaDonKhachSan implements FuntionTinhTien {
     private double soGioiThue;
     
-    public HoaDonTheoGio(String maHoaDon, Date ngayHoaDon, String tenKhachHang, String maPhong, double donGia,
-    double doanhThu){
-        super(maHoaDon, ngayHoaDon, tenKhachHang, maPhong, donGia, doanhThu);
-        
-    }
+   
      
     public void setSoGioiThue(double soGioiThue) {
         this.soGioiThue = soGioiThue;

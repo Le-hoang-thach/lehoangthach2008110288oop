@@ -15,7 +15,7 @@ public class VehicleTestDrive {
         car.setTriGia(input.nextDouble());
     }
     public static void main(String[] args) {
-        Vehicle car[] = null;
+        Vehicle car[] = null ;
         int luachon,n =0;
         boolean thoat = true;
         do{

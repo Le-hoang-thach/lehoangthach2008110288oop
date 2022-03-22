@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="TicTacTe/|OOPTuan4/" kind="src" path="OOP/src"/>
+	<classpathentry kind="src" path="OOP/src/OOPTuan4"/>
+	<classpathentry kind="src" path="OOP/src/TicTacTe"/>
+	<classpathentry kind="src" path="OOP/BaiTapVeAbstration"/>
+	<classpathentry kind="output" path="OOP/bin"/>
+</classpath>

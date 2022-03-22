@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch TienDienTestDrive",
+            "request": "launch",
+            "mainClass": "TienDienTestDrive",
+            "projectName": "OOP"
+        },
+        {
+            "type": "java",
+            "name": "Launch ChuyenXeTestDrive",
+            "request": "launch",
+            "mainClass": "OOPTuan4.ChuyenXeTestDrive",
+            "projectName": "OOP_7abb1e95"
+        },
+        {
+            "type": "java",
+            "name": "Launch AnimalTestDruve",
+            "request": "launch",
+            "mainClass": "KeThua.AnimalTestDruve",
+            "projectName": "OOP_7abb1e95"
+        },
+        {
+            "type": "java",
             "name": "Launch NganHangTestDrive",
             "request": "launch",
             "mainClass": "tuan3.buoi5.buoi6.NganHangTestDrive",
