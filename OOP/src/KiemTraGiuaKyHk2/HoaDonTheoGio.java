@@ -7,6 +7,14 @@ public class HoaDonTheoGio extends HoaDonKhachSan implements FuntionTinhTien {
     
    
      
+    public HoaDonTheoGio(String maHoaDon, String tenKhachHang, String maPhong, double donGia, double doanhThu,
+            double soGioiThue) {
+        super(maHoaDon, tenKhachHang, maPhong, donGia, doanhThu);
+        this.soGioiThue = soGioiThue;
+    }
+    public HoaDonTheoGio(double soGioiThue) {
+        this.soGioiThue = soGioiThue;
+    }
     public void setSoGioiThue(double soGioiThue) {
         this.soGioiThue = soGioiThue;
     }
@@ -32,7 +40,14 @@ public class HoaDonTheoGio extends HoaDonKhachSan implements FuntionTinhTien {
         this.soGioiThue = input.nextDouble();
     }
     public double tinhTien(){
-        return this.soGioiThue * getDonGia() ;
+        double tinhTien  = 0;
+        if(soGioiThue <= 24){
+            tinhTien = soGioiThue * getDonGia() ;
+        }else if(soGioiThue > 24 && soGioiThue < 30){
+            tinhTien = getDoanhThu() *24;
+        }
+        return tinhTien;
+        
     }
     @Override
     public String toString() {

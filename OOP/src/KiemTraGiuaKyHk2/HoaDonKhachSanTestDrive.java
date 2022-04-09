@@ -1,5 +1,6 @@
 package KiemTraGiuaKyHk2;
 
+import java.util.Calendar;
 import java.util.Scanner;
 
 public class HoaDonKhachSanTestDrive {
@@ -23,6 +24,8 @@ public class HoaDonKhachSanTestDrive {
                 case 4: System.out.println("Thank you uesd");
             }
         }while(luachon != 4);
+        Calendar calendar  = Calendar.getInstance();
+        System.out.println(calendar);
        
     }
 }

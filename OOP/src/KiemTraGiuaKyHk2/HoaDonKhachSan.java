@@ -3,7 +3,7 @@ package KiemTraGiuaKyHk2;
 import java.util.Date;
 import java.util.Scanner;
 
-public class HoaDonKhachSan {
+public abstract class HoaDonKhachSan {
     // emplementation
     // attribute
 

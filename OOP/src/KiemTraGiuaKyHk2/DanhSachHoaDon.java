@@ -10,7 +10,7 @@ public class DanhSachHoaDon  {
     private int demTong = 0;
     private double gio;
     
-    
+
     List<HoaDonTheoGio> listHoaDonTheoGio = new ArrayList<>();
     List<HoaDonTheoNgay> listHoaDonTheoNgay = new ArrayList<>();
     
@@ -57,26 +57,26 @@ public class DanhSachHoaDon  {
     //     }
     // }
     public void them(){
-        Scanner input = new Scanner(System.in);
-        System.out.println("Please enter rental hours:");
-        gio = input.nextDouble();
-        if(this.gio <30){
-            HoaDonTheoGio hoaDonTheoGio = new HoaDonTheoGio();
-            hoaDonTheoGio.nhapThongTin();
-            this.listHoaDonTheoGio.add(hoaDonTheoGio);
-            System.out.println("_____hourly bill ______");
-            for (HoaDonTheoGio hoaDonTheoGio1 : listHoaDonTheoGio) {
-                System.out.println(hoaDonTheoGio1);
-                }
+        // Scanner input = new Scanner(System.in);
+        // System.out.println("Please enter rental hours:");
+        // gio = input.nextDouble();
+        // if(this.gio <30){
+        //     HoaDonTheoGio hoaDonTheoGio = new HoaDonTheoGio();
+        //     hoaDonTheoGio.nhapThongTin();
+        //     this.listHoaDonTheoGio.add(hoaDonTheoGio);
+        //     System.out.println("_____hourly bill ______");
+        //     for (HoaDonTheoGio hoaDonTheoGio1 : listHoaDonTheoGio) {
+        //         System.out.println(hoaDonTheoGio1);
+        //         }
             
-        }else{
-            HoaDonTheoNgay hoaDonTheoNgay = new HoaDonTheoNgay();
-           hoaDonTheoNgay.nhapThongTin();
-           this.listHoaDonTheoNgay.add(hoaDonTheoNgay);
-           System.out.println("_______Invoice by day_______");
-           for (HoaDonTheoNgay hoaDonTheoNgay1 : listHoaDonTheoNgay) {
-            System.out.println(hoaDonTheoNgay1);
-        }
-        }
+        // }else{
+        //     HoaDonTheoNgay hoaDonTheoNgay = new HoaDonTheoNgay();
+        //    hoaDonTheoNgay.nhapThongTin();
+        //    this.listHoaDonTheoNgay.add(hoaDonTheoNgay);
+        //    System.out.println("_______Invoice by day_______");
+        //    for (HoaDonTheoNgay hoaDonTheoNgay1 : listHoaDonTheoNgay) {
+        //     System.out.println(hoaDonTheoNgay1);
+        //     }
+        // }
     }
 }
