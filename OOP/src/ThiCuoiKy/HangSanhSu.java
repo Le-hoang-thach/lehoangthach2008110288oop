@@ -1,5 +1,6 @@
 package ThiCuoiKy;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -52,26 +53,34 @@ public class HangSanhSu extends HangHoa {
     @Override
     public void kiemTraHSD() {
         // TODO Auto-generated method stubs
-       
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
         HangHoa hangHoa = new HangSanhSu();
         HangSanhSu hangSanhSu  = (HangSanhSu) hangHoa;
-        SimpleDateFormat ngayVietNam = new SimpleDateFormat("dd/MM/yyyy");
+        
         Date ngayHienTai = new Date();
-        Calendar c = Calendar.getInstance();
-        Calendar v = Calendar.getInstance();
-        c.setTime(ngayHienTai);
-        v.setTime(ngayNhapKho);
-        int ngayHienTai1 = c.get(Calendar.DATE);
-        int ngayNhapKho1 = v.get(Calendar.DATE);
-        int tinhNgay = ngayHienTai1 - ngayNhapKho1;
-        if(this.getSoLuongTonKho() > 50 && tinhNgay >10){
-            System.out.println("Hang Hoa ban cham");
-        }else{
-            System.out.println("Hang Hoa ban chay");
+        Date date1 = null;
+        Date date2 = null;
+        try {
+            String startDate = simpleDateFormat.format(ngayNhapKho);
+            String endDate = simpleDateFormat.format(ngayHienTai);
+            date1 = simpleDateFormat.parse(startDate);
+            date2 = simpleDateFormat.parse(endDate);
+            long getDiff = date2.getTime() - date1.getTime();
+          
+            long getDaysDiff = getDiff / (24 * 60 * 60 * 1000);
+            if(this.getSoLuongTonKho() > 50 && getDaysDiff > 10){
+                System.out.println("Goods sell slowly !!!");
+            }else{
+                System.out.println("Hot selling goods!!!");
+            }  
+        } catch (Exception e) {
+            //TODO: handle exception
+            e.printStackTrace();
         }
+       
         
     }
-    
+   
     
     
 }

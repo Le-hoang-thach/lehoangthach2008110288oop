@@ -74,9 +74,9 @@ public class HangDienMay extends HangHoa {
         // TODO Auto-generated method stub
         
         if(this.getSoLuongTonKho() < 3){
-            System.out.println("Hang ban chay");
+            System.out.println("Hot selling goods!!!");
         }else{
-            System.out.println("Hang khong ban chay");
+            System.out.println("Goods sell slowly !!!");
         }
     }
 

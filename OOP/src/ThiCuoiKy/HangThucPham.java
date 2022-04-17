@@ -29,13 +29,7 @@ public class HangThucPham extends HangHoa {
         return ngayHetHan;
     }
     public void setNgayHetHan(Date ngayHetHan) {
-        if(ngayHetHan.after(ngaySX)){
-            this.ngayHetHan = ngayHetHan;
-           
-        }else{
-            System.out.println("Ngay het han phai sau ngay san xuat");
-            
-        }
+        this.ngayHetHan = ngayHetHan;
            
     }
     @Override
@@ -46,14 +40,14 @@ public class HangThucPham extends HangHoa {
         +ngaySX + " thue: " + tinhTien() + "]" ;
     }
     public boolean tinhHSD(){
-        boolean isHetHan = false;
+        boolean ngayHetHan = false;
         Date ngayHienTai = new Date();
-        if(this.ngayHetHan.before(ngayHienTai)){
-            isHetHan = true;
+        if(this.ngayHetHan.before(ngaySX)){
+            ngayHetHan = false;
         }else{
-            isHetHan = false;
+            ngayHetHan = true;
         }
-        return isHetHan;
+        return ngayHetHan;
     }
 
     
@@ -64,9 +58,9 @@ public class HangThucPham extends HangHoa {
         HangHoa hangHoa = new HangThucPham();
         HangThucPham hangThucPham = (HangThucPham) hangHoa;
         if(this.getSoLuongTonKho() > 0 && this.tinhHSD() == false ){
-            System.out.println("Hang khong ban chay");
+            System.out.println("Goods sell slowly!!!");
         }else{
-            System.out.println("Hang ban chay");
+            System.out.println("Hot selling goods!!!");
         }
     }
     @Override

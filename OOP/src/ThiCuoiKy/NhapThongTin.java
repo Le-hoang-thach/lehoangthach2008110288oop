@@ -12,26 +12,27 @@ public class NhapThongTin   {
     public Scanner input = new Scanner(System.in);
 
     public HangHoa inputHangHoa() throws ParseException  {
-        int luachon;
+        int choose;
         HangHoa hangHoa = null;
-        
-        System.out.println("1.Hang Sanh Su ");
-        System.out.println("2.Hang Dien May");
-        System.out.println("3.HangThuc pham");
-        System.out.println("4.Thoat");
-        System.out.println("moi ban lua chon:");
-        luachon = input.nextInt();
-        switch(luachon){
+        System.out.println("Please select the goods to import");
+        System.out.println("-------------------------------------");
+        System.out.println("1.Crockery goods ");
+        System.out.println("2.Electrical goods");
+        System.out.println("3.Food goods");
+        System.out.println("4.Exit");
+        System.out.println("Please choose:");
+        choose = input.nextInt();
+        switch(choose){
             case 1:
             input.nextLine();
-            System.out.println("Nhap ma hang");
-            String maHang = input.nextLine();
-            System.out.println("Nhap ten san pham");
-            String tenHang =input.nextLine();
-            System.out.println("Nhap gia tien");
-            Double donGia = input.nextDouble();
-            System.out.println("Nhap so luong ton kho");
-            int soLuongTonKho = input.nextInt();
+            System.out.println("Enter item code:");
+            String commodityCodes = input.nextLine();
+            System.out.println("Enter item name:");
+            String goodsName =input.nextLine();
+            System.out.println("Enter the price:");
+            Double price = input.nextDouble();
+            System.out.println("Enter inventory quantity:");
+            int quantityInStock = input.nextInt();
             System.out.println("Nhap ngay nhap kho theo dd-MM-yyyy: ");
             
             String date = input.next();
@@ -43,7 +44,7 @@ public class NhapThongTin   {
                 input.nextLine();
                 System.out.println("Nhap nha san xuat:");
                 String nhaSX = input.nextLine();
-                hangHoa = new HangSanhSu(maHang, tenHang, donGia, soLuongTonKho, dateFormat.parse(date), nhaSX);
+                hangHoa = new HangSanhSu(commodityCodes, goodsName, price, quantityInStock, dateFormat.parse(date), nhaSX);
             } catch (ParseException e) {
                 // TODO Auto-generated catch block
                 System.out.println("loi cach nhap");
@@ -52,30 +53,31 @@ public class NhapThongTin   {
             break;
             case 2: 
             input.nextLine();
-            System.out.println("Nhap ma hang");
-            String maHang2 = input.nextLine();
-            System.out.println("Nhap ten san pham");
-            String tenHang2 =input.nextLine();
-            System.out.println("Nhap gia tien");
-            Double donGia2 = input.nextDouble();
-            System.out.println("Nhap so luong ton kho");
-            int soLuongTonKho2 = input.nextInt();
+            System.out.println("Enter item code:");
+            String commodityCodes2 = input.nextLine();
+            System.out.println("Enter item name:");
+            String goodsName2 =input.nextLine();
+            System.out.println("Enter the price:");
+            Double price2 = input.nextDouble();
+            System.out.println("Enter inventory quantity:");
+            int quantityInStock2 = input.nextInt();
             System.out.println("Nhap so thang bao hanh:");
             int thoiGianBaoHanhTheoThang = input.nextInt();
             System.out.println("Nhap cong suat:");
             double congSuat = input.nextDouble();
-            hangHoa = new HangDienMay(maHang2, tenHang2, donGia2, soLuongTonKho2, thoiGianBaoHanhTheoThang, congSuat);
+            hangHoa = new HangDienMay(commodityCodes2, goodsName2, price2, quantityInStock2, thoiGianBaoHanhTheoThang, congSuat);
+            
             break;
             case 3:
             input.nextLine();
-            System.out.println("Nhap ma hang");
-            String maHang3 = input.nextLine();
-            System.out.println("Nhap ten san pham");
-            String tenHang3 =input.nextLine();
-            System.out.println("Nhap gia tien");
-            Double donGia3 = input.nextDouble();
-            System.out.println("Nhap so luong ton kho");
-            int soLuongTonKho3 = input.nextInt();
+            System.out.println("Enter item code:");
+            String commodityCodes3 = input.nextLine();
+            System.out.println("Enter item name:");
+            String goodsName3 =input.nextLine();
+            System.out.println("Enter the price:");
+            Double price3 = input.nextDouble();
+            System.out.println("Enter inventory quantity:");
+            int quantityInStock3 = input.nextInt();
             input.nextLine();
             System.out.println("Nhap ngay nhap san xuat theo dd-MM-yyyy: ");
             String ngaySX = input.nextLine();
@@ -96,7 +98,7 @@ public class NhapThongTin   {
                 //TODO: handle exception
                 System.out.println("loi cach nhap");
             }
-           hangHoa = new HangThucPham(maHang3, tenHang3, donGia3, soLuongTonKho3, dateFormat.parse(ngaySX), dateFormat.parse(ngayHetHan));
+           hangHoa = new HangThucPham(commodityCodes3, goodsName3, price3, quantityInStock3, dateFormat.parse(ngaySX), dateFormat.parse(ngayHetHan));
             break;
             case 4: System.out.println("HEn gap lai"); break;
             default: System.out.println("Ban da chon sai vui long chon lai");

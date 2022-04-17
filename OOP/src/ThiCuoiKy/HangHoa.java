@@ -1,11 +1,12 @@
 package ThiCuoiKy;
 
+import java.text.ParseException;
 import java.util.Comparator;
 
 public  class HangHoa implements Comparator<HangHoa> {
     //attribute
     //emplementtation
-    static HangHoa hangHoa = new HangSanhSu();
+    static HangHoa hangHoa = new HangHoa();
     private String maHang;
     private String tenHang;
     private double donGia;
@@ -16,7 +17,7 @@ public  class HangHoa implements Comparator<HangHoa> {
     public  double tinhTien(){
         return 0;
     };
-    public void kiemTraHSD(){
+    public void kiemTraHSD() throws ParseException{
 
     };
  
@@ -43,7 +44,7 @@ public  class HangHoa implements Comparator<HangHoa> {
     }
     @Override
     public String toString() {
-        return "HangHoa [maHang=" + maHang + ", soLuongTonKho=" + soLuongTonKho + ", tenHang=" + tenHang + " don gia: " + donGia ;
+        return " [ commodity codes = " + maHang + ", Inventory number = " + soLuongTonKho + ", goods name = " + tenHang + " price = " + donGia ;
     }
     public String getMaHang() {
         return maHang;
@@ -52,7 +53,7 @@ public  class HangHoa implements Comparator<HangHoa> {
         if(maHang != null ){
             this.maHang = maHang;
         }else{
-            System.out.println("Ma hang khoong duoc de rong!!!!");
+            System.out.println("Ma hang khoong duoc de rong !!!!");
         }
     }
     
@@ -103,6 +104,7 @@ public  class HangHoa implements Comparator<HangHoa> {
         // TODO Auto-generated method stub
         return o1.getMaHang().compareTo(o2.getMaHang()) ;
     }
+    
 
     
    
