@@ -33,7 +33,7 @@ public class NhapThongTin   {
             Double price = input.nextDouble();
             System.out.println("Enter inventory quantity:");
             int quantityInStock = input.nextInt();
-            System.out.println("Nhap ngay nhap kho theo dd-MM-yyyy: ");
+            System.out.println("Enter the warehouse date in the format dd-MM-yyyy: ");
             
             String date = input.next();
            
@@ -47,7 +47,7 @@ public class NhapThongTin   {
                 hangHoa = new HangSanhSu(commodityCodes, goodsName, price, quantityInStock, dateFormat.parse(date), nhaSX);
             } catch (ParseException e) {
                 // TODO Auto-generated catch block
-                System.out.println("loi cach nhap");
+                e.printStackTrace();
             }
            
             break;
@@ -61,9 +61,9 @@ public class NhapThongTin   {
             Double price2 = input.nextDouble();
             System.out.println("Enter inventory quantity:");
             int quantityInStock2 = input.nextInt();
-            System.out.println("Nhap so thang bao hanh:");
+            System.out.println("Enter the number of months of warranty:");
             int thoiGianBaoHanhTheoThang = input.nextInt();
-            System.out.println("Nhap cong suat:");
+            System.out.println("Enter capacity:");
             double congSuat = input.nextDouble();
             hangHoa = new HangDienMay(commodityCodes2, goodsName2, price2, quantityInStock2, thoiGianBaoHanhTheoThang, congSuat);
             
@@ -79,7 +79,7 @@ public class NhapThongTin   {
             System.out.println("Enter inventory quantity:");
             int quantityInStock3 = input.nextInt();
             input.nextLine();
-            System.out.println("Nhap ngay nhap san xuat theo dd-MM-yyyy: ");
+            System.out.println("Enter production date according to dd-MM-yyyy: ");
             String ngaySX = input.nextLine();
             Date date3 = null;
             try {
@@ -87,21 +87,21 @@ public class NhapThongTin   {
                 date3 = dateFormat.parse(ngaySX);
                } catch (ParseException e) {
                 // TODO Auto-generated catch block
-                System.out.println("loi cach nhap");
+                e.printStackTrace();
             }
-            System.out.println("Nhap ngay nhap het han theo dd-MM-yyyy: ");
+            System.out.println("Enter the expiration date by dd-MM-yyyy: ");
             String ngayHetHan = input.nextLine();
             try {
                 date2 = dateFormat.parse(ngayHetHan);
                
             } catch (Exception e) {
                 //TODO: handle exception
-                System.out.println("loi cach nhap");
+                e.printStackTrace();
             }
            hangHoa = new HangThucPham(commodityCodes3, goodsName3, price3, quantityInStock3, dateFormat.parse(ngaySX), dateFormat.parse(ngayHetHan));
             break;
-            case 4: System.out.println("HEn gap lai"); break;
-            default: System.out.println("Ban da chon sai vui long chon lai");
+            case 4: System.out.println("See you!!!"); break;
+            default: System.out.println("You made the wrong choice, try again!!!");
         }
 
     

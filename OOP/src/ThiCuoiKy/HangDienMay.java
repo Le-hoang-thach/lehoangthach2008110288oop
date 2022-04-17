@@ -39,7 +39,7 @@ public class HangDienMay extends HangHoa {
         if(thoiGianBaoHanhTheoThang >= 0){
             this.thoiGianBaoHanhTheoThang = thoiGianBaoHanhTheoThang;
         }else{
-            System.out.println("Thoi gian bao hanh phai lon hon bang khong!!!");
+            System.out.println("The warranty period must be greater than 0!!!");
         }
     }
 
@@ -51,7 +51,7 @@ public class HangDienMay extends HangHoa {
         if(congSuat > 0){
             this.congSuat = congSuat;
         }else{
-            System.out.println("Cong suat phai lon hon 0");
+            System.out.println("Power must be greater than 0!!!");
         }
     }
 

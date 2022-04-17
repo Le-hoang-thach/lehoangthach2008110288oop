@@ -53,7 +53,7 @@ public  class HangHoa implements Comparator<HangHoa> {
         if(maHang != null ){
             this.maHang = maHang;
         }else{
-            System.out.println("Ma hang khoong duoc de rong !!!!");
+            System.out.println("The commodity code cannot be empty !!!!");
         }
     }
     
@@ -64,7 +64,7 @@ public  class HangHoa implements Comparator<HangHoa> {
         if(tenHang != null){
             this.tenHang = tenHang;
         }else{
-            System.out.println("Ten hang khong dc de rong!!!!");
+            System.out.println("The product name cannot be blank!!!!");
         }
         
     }
@@ -75,7 +75,7 @@ public  class HangHoa implements Comparator<HangHoa> {
         if(soLuongTonKho >= 0){
             this.soLuongTonKho = soLuongTonKho;
         }else{
-            System.out.println("So luong ton khong the am");
+            System.out.println("The number of goods in stock must not be negative!!!");
         }
            
     }
@@ -90,15 +90,10 @@ public  class HangHoa implements Comparator<HangHoa> {
         if(donGia >0){
             this.donGia = donGia;
         }else{
-            System.out.println("San pham khong duoc be hon khong!!!");
+            System.out.println("Price should not be less than 0!!!");
         }
     }
-    public void inThongTin(){
-        System.out.println("Ten San pham:" + hangHoa.getTenHang());
-        System.out.println("ma hang:" +hangHoa.getMaHang());
-        System.out.println("so luong tron kho:" +hangHoa.getSoLuongTonKho());
-        System.out.println("don gia:" + hangHoa.getDonGia());
-    }
+    
     @Override
     public int compare(HangHoa o1, HangHoa o2) {
         // TODO Auto-generated method stub
