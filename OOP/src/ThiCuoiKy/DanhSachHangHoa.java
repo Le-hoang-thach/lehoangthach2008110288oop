@@ -211,7 +211,18 @@ public class DanhSachHangHoa {
                 }
             
                 
-           }); System.out.println("Sap xep thanh cong vui long bam in danh sach de kiem tra lai");break;
+           }); 
+           for (HangHoa hangHoa : danhSach) {
+            System.out.println(hangHoa);
+            System.out.println("Check Output Rate");
+            try {
+                hangHoa.kiemTraHSD();
+            } catch (Exception e) {
+                //TODO: handle exception
+                e.printStackTrace();
+            }
+            
+        }break;
            case 2: 
             System.out.println("Day la hang sanh su");
             System.out.println("_______________________");
